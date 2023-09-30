@@ -265,7 +265,7 @@
         e.preventDefault(); // Cancel the event
         e.returnValue = ''; // Chrome requires returnValue to be set
         // Display a message
-        var confirmationMessage = 'So GoGuardian Cannot close this tab';
+        var confirmationMessage = 'Are you sure you want to leave this page';
         (e || window.event).returnValue = confirmationMessage; // Gecko + IE
         return confirmationMessage; // Webkit, Safari, Chrome etc.
       });
